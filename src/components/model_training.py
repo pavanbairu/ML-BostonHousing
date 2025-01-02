@@ -4,11 +4,11 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from dataclasses import dataclass
-from housing.exception import BostonHousingException
-from housing import constants
-from housing.utils import save_obj
+from src.exception import BostonHousingException
+from src import constants
+from src.utils import save_obj
 from sklearn.linear_model import LinearRegression
-from housing.logger import logging
+from src.logger import logging
 import statsmodels.api as sm
 
 @dataclass

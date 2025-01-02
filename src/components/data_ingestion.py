@@ -5,11 +5,9 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-from housing.exception import BostonHousingException
-from housing.logger import logging
-from housing.components.data_transformation import DataTransformation
-from housing.components.model_training import ModelTraining
-from housing import constants
+from src.exception import BostonHousingException
+from src.logger import logging
+from src import constants
 
 @dataclass
 class DataIngestionConfig:
@@ -35,7 +33,7 @@ class DataIngestion:
             tuple: Paths to the training and testing CSV files.
         
         Raises:
-            BostonHousingException: If any error occurs during data ingestion.
+            BostonsrcException: If any error occurs during data ingestion.
         """
         try:
             # Read the cleaned dataset from the specified path

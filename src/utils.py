@@ -1,7 +1,7 @@
 import os
 import sys
-from housing.exception import BostonHousingException
-from housing.logger import logging
+from src.exception import BostonHousingException
+from src.logger import logging
 import pickle
 
 def save_obj(path, obj):

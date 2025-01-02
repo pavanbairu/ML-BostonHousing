@@ -8,10 +8,10 @@ from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer
 from dataclasses import dataclass
 
-from housing.exception import BostonHousingException
-from housing import constants
-from housing.logger import logging
-from housing.utils import save_obj
+from src.exception import BostonHousingException
+from src import constants
+from src.logger import logging
+from src.utils import save_obj
 
 @dataclass
 class DataTransformationConfig:
